@@ -46,6 +46,7 @@ Clone the repository:
 ```bash
    git clone https://github.com/Abdull-Kudus/alu_regex-data-extraction-Abdull-Kudus.git
    cd alu_regex-data-extraction-Abdull-Kudus
+```
 
 ## Run the Script to test using:
    node main.js
