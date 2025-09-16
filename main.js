@@ -20,3 +20,31 @@ let CreditCard = /\b\d{4}[- ]\d{4}[- ]\d{4}[- ]\d{4}\b/g;
 let Phonenumber =  /\(?\d{3,}\)?(\s|\.|-)\d{3,}(-|.)\d{4,}/g
 let linkRegex = /https?:\/\/[a-zA-Z]+\.example\.[a-zA-Z]+(\/[a-zA-Z]+)?/g
 let TimeRegex = /\b(?:(?:[01]?[0-9]|2[0-3]):[0-5][0-9]|(?:1[0-2]|[1-9]):[0-5][0-9]\s?(?:AM|PM|am|pm))\b/g
+
+// Loop through each key in the object and apply the corresponding regex and print the matches
+for (let key in str) {
+    console.log(`\nThe matched data types for ${key} are:`);
+
+    str[key].forEach(item => {
+        let matched;
+
+        ;
+         if (key === "HTML tags") {
+            matched = item.match(HtmltagsRegex);
+        } else if (key === "Currency amounts") {
+            matched = item.match(CurrencyRegex);
+        } else if (key === "Email addresses") {
+            matched = item.match(EmailRegex)
+        } else if (key === "Credit card numbers") {
+            matched = item.match(CreditCard);
+        } else if (key === "Phone Numbers") {
+            matched = item.match(Phonenumber);
+        } else if (key === "URLs") {
+            matched = item.match(linkRegex);
+        } else if (key === "Time") {
+            matched = item.match(TimeRegex);
+
+            }
+            console.log(`${item} → ${matched}`);
+    });
+}
