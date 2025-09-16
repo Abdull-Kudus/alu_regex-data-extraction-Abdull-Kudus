@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project extracts and categorizes specific data types from strings using **regular expressions**. It identifies 7 common patterns such as:
+This project extracts and categorizes specific data types from strings using **regular expressions**. It identifies 7 common patterns, such as:
 
 - HTML tags
 - Currency amounts
@@ -44,7 +44,7 @@ The script applies regex patterns to each category and outputs matches in the co
 Clone the repository:
 
 ```bash
-   git clone https://github.com/Abdull-Kudus/alu_regex-data-extraction-Abdull-Kudus.git
+   git clone https://github.com/Abdull-Kudus/alu_regex-data-extraction-Abdull-Kudus.git`
    cd alu_regex-data-extraction-Abdull-Kudus
 ```
 
@@ -53,6 +53,6 @@ Clone the repository:
 
 ## Example Output
  The matched data types for Email addresses are:
-user@example.com → user@example.com
-firstname.lastname@company.co.uk → firstname.lastname@company.co.uk
+`user@example.com` → `user@example.com`
+`firstname.lastname@company.co.uk` → `firstname.lastname@company.co.uk`
 
