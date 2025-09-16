@@ -11,3 +11,12 @@ let str = {
     "Currency amounts" : ["$19.99", "$1,234.56", "$0.99", "$100"]
 
 };
+
+// Regular Expressions Patterns
+let HtmltagsRegex = /<[^>]+>/g
+let CurrencyRegex = /\$\d{1,3}(,\d{3})*(\.\d{2})?/g;
+let EmailRegex = /[a-zA-Z0-9.]+@[a-zA-Z]+\.com?(\.uk)?/g
+let CreditCard = /\b\d{4}[- ]\d{4}[- ]\d{4}[- ]\d{4}\b/g;
+let Phonenumber =  /\(?\d{3,}\)?(\s|\.|-)\d{3,}(-|.)\d{4,}/g
+let linkRegex = /https?:\/\/[a-zA-Z]+\.example\.[a-zA-Z]+(\/[a-zA-Z]+)?/g
+let TimeRegex = /\b(?:(?:[01]?[0-9]|2[0-3]):[0-5][0-9]|(?:1[0-2]|[1-9]):[0-5][0-9]\s?(?:AM|PM|am|pm))\b/g
